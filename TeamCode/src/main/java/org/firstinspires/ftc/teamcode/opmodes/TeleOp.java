@@ -58,6 +58,19 @@ public class TeleOp extends OpMode {
                 break;
         }
 
+        if (gamepad1.y)
+            driveMode = DriveMode.FAST;
+
+        if (gamepad1.a)
+            driveMode = DriveMode.SLOW;
+
+        if (gamepad1.x || gamepad1.b)
+            driveMode = DriveMode.MEDIUM;
+
+        // drivetrain
+
+
+
 
     }
 

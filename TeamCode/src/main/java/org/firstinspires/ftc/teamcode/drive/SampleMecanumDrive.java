@@ -84,8 +84,8 @@ public class SampleMecanumDrive extends MecanumDrive {
 
         double LF = -FORWARD_DRIVE + STRAFE_DRIVE - TURN_DRIVE;
         double LR = -FORWARD_DRIVE - STRAFE_DRIVE - TURN_DRIVE;
-        double RR = -FORWARD_DRIVE + STRAFE_DRIVE + TURN_DRIVE;
-        double RF = -FORWARD_DRIVE - STRAFE_DRIVE + TURN_DRIVE;
+        double RR = +FORWARD_DRIVE + STRAFE_DRIVE - TURN_DRIVE;
+        double RF = +FORWARD_DRIVE - STRAFE_DRIVE - TURN_DRIVE;
 
         LF = Range.clip(LR, -speed, speed);
         LR = Range.clip(LR, -speed, speed);
